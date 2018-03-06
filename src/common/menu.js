@@ -16,19 +16,57 @@ const menuData = [{
     // hideInMenu: true,
   }],
 }, {
+  name: '客户管理',
+  icon: 'form',
+  path: 'custom',
+  children: [{
+    name: '用户管理',
+    path: 'user-list',
+  }, {
+    name: '编辑管理',
+    path: 'editor-list',
+  }, {
+    name: '编辑队伍',
+    path: 'editor-team',
+  }],
+}, {
+  name: '业务管理',
+  icon: 'form',
+  path: 'order',
+  children: [{
+    name: '订单管理',
+    path: 'order-list',
+  }, {
+    name: '用户交易记录',
+    path: 'user-trans',
+  }, {
+    name: '编辑交易记录',
+    path: 'editor-trans',
+  }, {
+    name: '发票管理',
+    path: 'invoice',
+  }],
+}, {
+  name: '活动管理',
+  icon: 'form',
+  path: 'coupon',
+  children: [{
+    name: '优惠卡管理',
+    icon: 'form',
+    path: 'coupon',
+  }],
+}, {
   name: '系统管理',
   icon: 'form',
   path: 'form',
   children: [{
-    name: '基础表单',
+    name: '管理员管理',
+    authority: 'admin',
     path: 'basic-form',
   }, {
-    name: '分步表单',
-    path: 'step-form',
-  }, {
-    name: '高级表单',
+    name: '角色管理',
     authority: 'admin',
-    path: 'advanced-form',
+    path: 'step-form',
   }],
 },
 // {
